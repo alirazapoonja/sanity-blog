@@ -13,6 +13,12 @@ export default {
             name: 'subheadling',
             type: 'string',
             title: 'Name'
-        }
-    ]
-}
+        },
+
+        {
+            name: 'description',
+            type: 'string',
+            title: 'Description'
+          },
+        ],
+      }

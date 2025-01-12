@@ -3,14 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "import-data": "node scripts/importSanityData.mjs"
   },
   "dependencies": {
+    "@sanity/client": "^6.24.3",
     "@sanity/image-url": "^1.1.0",
     "@sanity/vision": "^3.68.3",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
     "next": "15.1.4",
     "next-sanity": "^9.8.32",
     "react": "^19.0.0",
